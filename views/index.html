@@ -9,18 +9,20 @@
 <body>
   <header>
     <h1>What Should I Eat?</h1>
-    
   </header>
 
   <main>
     <section class="container">
-      <h2>Random Meal Generator</h2>
       <button id="rngButton">What should I eat?</button>
       <p id="mealSuggestion" class="meal-suggestion"></p>
 
-      <!-- New section to display restaurants -->
-      <h3>Nearby Restaurants</h3>
+      <h3 id="restaurant">Nearby Restaurants</h3>
       <ul id="restaurantList" class="restaurant-list"></ul>
+    </section>
+
+    <section class="map-container">
+      <h3 id="restaurantName" class="restaurant-name">Restaurant Location</h3>
+      <div id="map"></div>
     </section>
   </main>
 
@@ -29,5 +31,10 @@
   </footer>
 
   <script src="/script.js"></script>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmrQD2DnlTSRDUN5sur4NNRqKs-TFPyQo&callback=initMap&libraries=places&v=weekly&solution_channel=GMP_CCS_placedetails_v2"
+    defer
+  ></script>
 </body>
 </html>
