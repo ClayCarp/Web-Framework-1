@@ -4,12 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>What Should I Eat?</title>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1>What Should I Eat?</h1>
   </header>
+
+  <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/favorites">Favorites</a></li>
+    </ul>
+</nav>
 
   <main>
     <section class="container">
@@ -22,6 +29,8 @@
 
     <section class="map-container">
       <h3 id="restaurantName" class="restaurant-name">Restaurant Location</h3>
+      <div id="directionsQuestion" class="directions-question"></div>
+      <p id="whiteSpace"> </p>
       <div id="map"></div>
     </section>
   </main>
@@ -30,7 +39,18 @@
     <p>&copy; 2025 What Should I Eat</p>
   </footer>
 
-  <script src="/script.js"></script>
+  <div id="directionsModal" class="modal">
+    <div class="modal-content">
+      <h2>Get Directions</h2>
+      <p>Would you like directions to this restaurant?</p>
+      <div class="modal-actions">
+        <button id="directionsYes" class="modal-button">Yes</button>
+        <button id="directionsNo" class="modal-button">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmrQD2DnlTSRDUN5sur4NNRqKs-TFPyQo&callback=initMap&libraries=places&v=weekly&solution_channel=GMP_CCS_placedetails_v2"
