@@ -4,9 +4,13 @@ A simple web framework built with Node.js and Express, containerized with Docker
 
 ## Simple Setup
 Run npm install to install dependencies.
+
 Install Axios with npm install axios for making API requests.
+
 Run the server with Node index.js
+
 Click the hyperlink in the terminal to access the web app.
+
 
 
 
