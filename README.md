@@ -3,14 +3,11 @@
 A simple web framework built with Node.js and Express, containerized with Docker.
 
 ## Simple Setup
-Steps for Setup:
-1. Install Docker and Docker Compose on your system
-2. Clone the repository
-3. Run the application using Docker Compose:
-   ```bash
-   docker-compose up --build
-   ```
-4. Visit http://localhost:3001 to access the web app
+Run npm install to install dependencies.
+Install Axios with npm install axios for making API requests.
+Run the server with Node index.js
+Click the hyperlink in the terminal to access the web app.
+
 
 
 ## Running with Node.js directly
