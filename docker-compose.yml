@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./views:/usr/src/app/views
+      - ./public:/usr/src/app/public
+    environment:
+      - NODE_ENV=development
+    restart: unless-stopped 
